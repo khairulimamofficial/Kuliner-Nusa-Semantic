@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/*--------- SCROLL BAR CUSTOM ------ */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #505050; 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #303030; 
+  }
+/*--------- SCROLL BAR CUSTOM ------ */
+
+
+    .main{
+        margin: 0 auto;
+    }
+
+    body {
+        color: #00374E;
+        overflow-x: hidden;
+    }
+    a{
+        cursor: pointer;
+    }
+
+/*--- Navbar--- */
+    header{
+        border-bottom: 2px solid #00374E;
+    }
+    
+    nav{
+        margin: 15px 4%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-item{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-item a{
+        margin-left: 80px;
+        width: 60%;
+        margin: -15px 0 -15px 35px;
+    }
+
+    nav ul{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav ul li{
+        list-style-type: none;
+
+    }
+
+    nav ul li a{
+        padding: 15px 25px;
+        margin: 0 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .toggle{
+        display: none;
+    }
+    .item{
+        display: block;
+    }
+
+/*--- Section 1--- */
+
+.container{
+    margin: 0 10%;
+}
+
+.top-wrapper{
+    padding: 50px 0;
+    height: 72vh;
+}
+
+.top-wrapper h1{
+
+    margin-top: 5%;
+    font-family: Poppins;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top-wrapper p{
+    font-family: 'Merriweather';
+    max-width: 30%;
+    font-size: 1.1em;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.background{
+    background-image: url(src/Background.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    max-height: 800px;
+}
+
+.line-horizontal{
+    width: 266px;
+    height: 5px;
+    background: #FFFFFF;
+    margin: 3% 0 1% 0;
+}
+
+@media all and  (min-width: 1600px){
+    nav{
+        width: 1366px;
+        margin: 15px auto;
+    }
+    .container{
+        width: 1366px;
+        margin: 0 auto;
+    }
+    .direktori-headmaster-wrapper{
+        width: 1366px;
+    }
+
+}
+
+@media all and (max-width: 960px) {
+
+    .footer-container{
+        flex-direction: column;
+    }
+    footer .footer-container nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer nav {
+        width: 100%;
+    }
+    .footer-container .footer-right{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .toggle{
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+    }
+    .toggle a{
+        padding: 0;
+    }
+    .menu{
+        margin-top: 50px;
+    }
+    .item{
+        display: none;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+    }
+    .active .item {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .direktori-siswa{
+        margin-top: 145px;
+    }
+    .top-wrapper p{
+        max-width: 80%;
+    }
+}
+/* ---- Sarana Section 2 -----*/
+
+.direktori-siswa{
+    background: rgba(0, 55, 78, 0.9);
+    height: 207px;
+    width: 100%;
+    position: absolute;
+    top: 69vh;
+}
+
+.direktori-siswa-wrapper h2{
+    text-align: center;
+    margin: auto auto;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 4% 0 2% 0;
+    width: 80%;
+}
+
+form.direktori {
+    display: flex;
+    justify-content: center;
+}
+.direktori-wrapper{
+    margin: 0 auto;
+}
+.direktori input{
+    border: none;
+}
+.direktori input:nth-of-type(1) {
+    width: 50%;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+}
+.direktori input:nth-of-type(2) {
+    width: 11%;
+    margin-left: 8px;
+    border-radius: 0 8px 8px 0;
+    color: #FFFFFF;
+    background-color: #A4C719;
+}
+input[value=Cari]{
+    font-size: 18px;
+}
+.direktori input[type=text]{
+    padding-left: 15px;
+}
+
+.content-wrapper h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin: 5% 0;
+}
+
+/* ---- Sarana Section 3 -----*/
+
+.content-container{
+    margin: 5% 0 15% 0;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px 4px rgba(80, 80, 80, 0.1);
+    transition: 0.3s;
+    width: 330px;
+    max-height: 188px;
+    margin-bottom: 20px;
+}
+
+.card-flex {
+    display: flex;
+}
+.card-content{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-content p{
+    font-size: 12px;
+    font-family: Poppins;
+}
+.card-content h4{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    color: #29ABE1;
+}
+.link-card a{
+    font-weight: 300;
+    font-size: 12px;
+    display: flex;
+    color: #29ABE1;
+}
+.link-card img{
+    margin-left: 5px;
+}
+
+/*---- Footer ---- */
+
+footer{
+    background-color: #00374E;
+    color: #FFFFFF;
+}
+.footer-container{
+    display: flex;
+    padding: 5% 0;
+}
+
+.footer-left p{
+    margin-left: 195px;
+}
+
+footer nav {
+    margin: 0;
+}
+footer nav ul {
+    flex-direction: column;
+    margin-top: 0;
+}
+footer nav ul li{
+    margin: 5px 0;
+}
+
+footer nav ul li a{
+    font-weight: 400;
+}
+.footer-right {
+    margin-left: 15%;
+}
